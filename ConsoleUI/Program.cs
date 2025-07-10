@@ -49,6 +49,33 @@ namespace ConsoleUI
 
             #endregion            
             Console.ReadLine();
+            
+            List <Vehicule> vehicules = new List <Vehicule>();
+            
+            Car car = new Car();
+            car.Make = "Tesla";
+            car.Model = "Y";
+            car.Year = "2025";
+            
+            Motorcycle bike = new Motorcycle();
+            bike.Make = "Harley Davidson";
+            bike.Model = "Road buster";
+            bike.Year = "2015";
+            
+            Vehicule BMW = new Motorcycle();
+            Vehicule GMC = new Motorcycle();
+            
+            vehicules.Add(car);
+            vehicules.Add(bike);
+            vehicules.Add(GMC);
+            vehicules.Add(BMW);
+
+            foreach (Vehicule vehicule in vehicules)
+            {
+                Console.WriteLine(vehicule.Make + " " + vehicule.Model + " " + vehicule.Year);
+            }
+            car.DriveAbstract();
+            bike.DriveVirtual();
         }
     }
 }
