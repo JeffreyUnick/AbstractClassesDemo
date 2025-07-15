@@ -70,9 +70,9 @@ namespace ConsoleUI
             vehicules.Add(GMC);
             vehicules.Add(BMW);
 
-            foreach (Vehicule vehicule in vehicules)
+            foreach (Vehicule element in vehicules)
             {
-                Console.WriteLine(vehicule.Make + " " + vehicule.Model + " " + vehicule.Year);
+                Console.WriteLine(element.Make + " " + element.Model + " " + element.Year);
             }
             car.DriveAbstract();
             bike.DriveVirtual();

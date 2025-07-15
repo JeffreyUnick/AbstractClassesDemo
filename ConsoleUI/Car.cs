@@ -1,3 +1,5 @@
+using System;
+
 namespace ConsoleUI;
 
 public class Car : Vehicule
@@ -6,6 +8,7 @@ public class Car : Vehicule
 
     public override void DriveAbstract()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("Car Drive");
+        ;
     }
 }
